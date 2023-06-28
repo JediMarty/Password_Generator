@@ -17,8 +17,7 @@ public class PassGenerator {
 		for (int i = 0; i<8; i++) {
 			random = rand.nextInt(array.length); 
 			pass+=array[random];
-           
-       }
+			}
 		
 		System.out.println("Your password: "+pass);
 	
