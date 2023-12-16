@@ -1,4 +1,4 @@
-package pG;
+
 import java.util.Random;
 
 public class PassGenerator {
@@ -10,17 +10,24 @@ public class PassGenerator {
 				"a","b","c","d","e","f","g","h","i","j","k","l","m",
 				"n","o","p","q","r","s","t","u","v","w","x","y","z"};
 		
-		Random rand = new Random(); 
+		System.out.println("How long you want the password to be ?");
+		
+		
+		System.out.println("Your password: "+pass(array));
+	
+	}
+public static String pass(String[] arr){
+    
+    Random rand = new Random(); 
 		int random;
 		String pass = "";
 		
 		for (int i = 0; i<8; i++) {
-			random = rand.nextInt(array.length); 
-			pass+=array[random];
+			random = rand.nextInt(arr.length); 
+			pass+=arr[random];
 			}
-		
-		System.out.println("Your password: "+pass);
-	
-	}
+			
+			return pass;
+}
 
 }
